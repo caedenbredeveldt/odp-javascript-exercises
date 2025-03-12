@@ -1,25 +1,17 @@
 const add = function(a,b) {
-	return a+b;
+	return a + b;
 };
 
 const subtract = function(a, b) {
-  return a-b;
+  return a - b;
 };
 
 const sum = function(arr) {
-  let total = 0;
-  arr.forEach(num => {
-    total += num;
-  });
-  return total;
+  return arr.reduce((total, current) => total + current, 0)
 };
 
 const multiply = function(arr) {
-  let total = 1;
-  arr.forEach(num => {
-    total *= num;
-  });
-  return total;
+  return arr.reduce((total, current) => total * current)
 };
 
 const power = function(a, b) {
